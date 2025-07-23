@@ -1,0 +1,231 @@
+@font-face {
+    font-display: swap;
+    font-family: "Helvetica";
+    src: url("https://www.greenheck.com/Content/GreenheckStyles/fonts/Helvetica.otf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Helvetica-Bold";
+    src: url(https://www.greenheck.com/Content/GreenheckStyles/fonts/Helvetica-Bold.ttf);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 2rem;
+    color: #333;
+}
+
+.main-content {
+    font-family: "Helvetica", sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 500 !important;
+    line-height: 32px !important;
+    letter-spacing: 0px !important;
+    color: rgba(51, 51, 51, 1) !important;
+}
+
+.modal-content {
+    font-family: "Helvetica", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 28px !important;
+    letter-spacing: 0px !important;
+    color: #575859 !important;
+}
+
+.modal-content h1 {
+    font-family: "Helvetica-Bold", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 32px !important;
+}
+
+.main-content a,
+.main-content button {
+    color: #00A8E4 !important;
+    text-decoration: none !important;
+}
+
+.main-content a:hover,
+.main-content button:hover {
+    text-decoration: underline !important;
+}
+
+strong {
+    font-family: "Helvetica-Bold", sans-serif;
+    font-weight: normal !important;
+}
+
+.bullet-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.bullet-list li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.icon-trigger {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 5px;
+    color: #007bff;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.icon-trigger:hover {
+    color: #0056b3;
+}
+
+.modal {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    padding: 20px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+}
+
+.advantages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advantages-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.advantage-icon {
+    margin-right: 15px;
+    width: 48px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap;
+}
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    font-size: 14px;
+}
+
+.table-container td,
+.table-container th {
+    padding: 2px 8px;
+    line-height: 1.4;
+}
+
+.group-header {
+    text-align: center;
+}
+
+.hexagon-cell {
+    vertical-align: middle;
+}
+
+.hexagon-cell-content {
+    position: relative;
+    width: 62.56px;
+    height: 54.4px;
+    margin: auto;
+}
+
+.hexagon-shape,
+.hexagon-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hexagon-shape {
+    background-color: #005A9C;
+}
+
+.hexagon-inner {
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    z-index: 1;
+}
+
+.hexagon-text {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.2;
+}
+
+.table-notes {
+    margin-top: 1rem;
+    list-style-position: inside;
+    padding-left: 0;
+}

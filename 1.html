@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Example</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <header>
+                <h2>
+                    <button aria-expanded="true" aria-controls="content1" id="accordion-button-1"
+                        onclick="(function() { const isExpanded = this.matches('[aria-expanded=\'true\']'); this.setAttribute('aria-expanded', !isExpanded); document.getElementById(this.getAttribute('aria-controls')).hidden = isExpanded; }.bind(this))()">
+                        A Dummy Title
+                    </button>
+                </h2>
+            </header>
+            <p id="content1">This is some dummy content to demonstrate semantic HTML structure. Using tags like main, article, header, and p helps define the structure and meaning of the content for browsers and
+                assistive technologies.</p>
+        </article>
+        <article>
+            <header>
+                <h2>
+                    <button aria-expanded="false" aria-controls="content2" id="accordion-button-2"
+                        onclick="(function() { const isExpanded = this.matches('[aria-expanded=\'true\']'); this.setAttribute('aria-expanded', !isExpanded); document.getElementById(this.getAttribute('aria-controls')).hidden = isExpanded; }.bind(this))()">
+                        Another Dummy Title
+                    </button>
+                </h2>
+            </header>
+            <p id="content2" hidden>Here is another paragraph of text for the second article. Each article element represents a self-contained composition in a document, page, application, or site, which is intended to
+                be independently distributable or reusable.</p>
+        </article>
+    </main>
+</body>
+
+</html>
